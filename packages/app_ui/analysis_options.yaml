@@ -1,0 +1,4 @@
+include: package:code_quality/analysis_options.yaml
+
+# Additional information about this file can be found at
+# https://dart.dev/guides/language/analysis-options
