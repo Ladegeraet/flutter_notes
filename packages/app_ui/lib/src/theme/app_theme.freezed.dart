@@ -17,7 +17,6 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$AppTheme {
   ColorScheme get colorScheme => throw _privateConstructorUsedError;
-  MaterialColor get customColor => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $AppThemeCopyWith<AppTheme> get copyWith =>
@@ -29,7 +28,7 @@ abstract class $AppThemeCopyWith<$Res> {
   factory $AppThemeCopyWith(AppTheme value, $Res Function(AppTheme) then) =
       _$AppThemeCopyWithImpl<$Res, AppTheme>;
   @useResult
-  $Res call({ColorScheme colorScheme, MaterialColor customColor});
+  $Res call({ColorScheme colorScheme});
 }
 
 /// @nodoc
@@ -46,17 +45,12 @@ class _$AppThemeCopyWithImpl<$Res, $Val extends AppTheme>
   @override
   $Res call({
     Object? colorScheme = null,
-    Object? customColor = null,
   }) {
     return _then(_value.copyWith(
       colorScheme: null == colorScheme
           ? _value.colorScheme
           : colorScheme // ignore: cast_nullable_to_non_nullable
               as ColorScheme,
-      customColor: null == customColor
-          ? _value.customColor
-          : customColor // ignore: cast_nullable_to_non_nullable
-              as MaterialColor,
     ) as $Val);
   }
 }
@@ -68,7 +62,7 @@ abstract class _$$_AppThemeCopyWith<$Res> implements $AppThemeCopyWith<$Res> {
       __$$_AppThemeCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({ColorScheme colorScheme, MaterialColor customColor});
+  $Res call({ColorScheme colorScheme});
 }
 
 /// @nodoc
@@ -83,17 +77,12 @@ class __$$_AppThemeCopyWithImpl<$Res>
   @override
   $Res call({
     Object? colorScheme = null,
-    Object? customColor = null,
   }) {
     return _then(_$_AppTheme(
       colorScheme: null == colorScheme
           ? _value.colorScheme
           : colorScheme // ignore: cast_nullable_to_non_nullable
               as ColorScheme,
-      customColor: null == customColor
-          ? _value.customColor
-          : customColor // ignore: cast_nullable_to_non_nullable
-              as MaterialColor,
     ));
   }
 }
@@ -101,17 +90,14 @@ class __$$_AppThemeCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_AppTheme extends _AppTheme {
-  const _$_AppTheme({required this.colorScheme, required this.customColor})
-      : super._();
+  const _$_AppTheme({required this.colorScheme}) : super._();
 
   @override
   final ColorScheme colorScheme;
-  @override
-  final MaterialColor customColor;
 
   @override
   String toString() {
-    return 'AppTheme(colorScheme: $colorScheme, customColor: $customColor)';
+    return 'AppTheme(colorScheme: $colorScheme)';
   }
 
   @override
@@ -120,13 +106,11 @@ class _$_AppTheme extends _AppTheme {
         (other.runtimeType == runtimeType &&
             other is _$_AppTheme &&
             (identical(other.colorScheme, colorScheme) ||
-                other.colorScheme == colorScheme) &&
-            (identical(other.customColor, customColor) ||
-                other.customColor == customColor));
+                other.colorScheme == colorScheme));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, colorScheme, customColor);
+  int get hashCode => Object.hash(runtimeType, colorScheme);
 
   @JsonKey(ignore: true)
   @override
@@ -136,15 +120,12 @@ class _$_AppTheme extends _AppTheme {
 }
 
 abstract class _AppTheme extends AppTheme {
-  const factory _AppTheme(
-      {required final ColorScheme colorScheme,
-      required final MaterialColor customColor}) = _$_AppTheme;
+  const factory _AppTheme({required final ColorScheme colorScheme}) =
+      _$_AppTheme;
   const _AppTheme._() : super._();
 
   @override
   ColorScheme get colorScheme;
-  @override
-  MaterialColor get customColor;
   @override
   @JsonKey(ignore: true)
   _$$_AppThemeCopyWith<_$_AppTheme> get copyWith =>

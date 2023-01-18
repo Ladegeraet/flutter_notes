@@ -1,3 +1,3 @@
 library app_ui;
 
-export 'lib.dart';
+export 'src/src.dart';

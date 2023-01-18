@@ -13,6 +13,8 @@ linter:
     public_member_api_docs: false
     comment_references: false
     lines_longer_than_80_chars: false
+    sort_constructors_first: false
+    sort_unnamed_constructors_first: false
 
 
 dart_code_metrics:
