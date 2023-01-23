@@ -4,6 +4,31 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/app/router/app_router.dart';
 import 'package:notes_app/app/service_locator/service_locator.dart';
 import 'package:notes_app/app/settings/settings_cubit.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+
+@WidgetbookApp.material(
+  name: 'Meal App',
+  frames: [
+    WidgetbookFrame(
+      name: 'Widgetbook',
+      allowsDevices: true,
+    ),
+    WidgetbookFrame(
+      name: 'None',
+      allowsDevices: false,
+    ),
+  ],
+  devices: [Apple.iPhone12],
+  textScaleFactors: [
+    1,
+    2,
+    3,
+  ],
+  foldersExpanded: true,
+  widgetsExpanded: true,
+)
+@WidgetbookTheme(name: 'Dark', isDefault: true)
+ThemeData getDarkTheme() => AppTheme.light().toThemeData();
 
 class NotesApp extends StatelessWidget {
   const NotesApp({super.key});

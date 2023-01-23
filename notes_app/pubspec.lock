@@ -7,21 +7,21 @@ packages:
       name: _fe_analyzer_shared
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "50.0.0"
+    version: "47.0.0"
   analyzer:
     dependency: transitive
     description:
       name: analyzer
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.2.0"
+    version: "4.7.0"
   analyzer_plugin:
     dependency: transitive
     description:
       name: analyzer_plugin
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.11.2"
+    version: "0.10.0"
   ansicolor:
     dependency: transitive
     description:
@@ -91,7 +91,7 @@ packages:
       name: build_resolvers
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0"
+    version: "2.0.10"
   build_runner:
     dependency: "direct dev"
     description:
@@ -189,7 +189,7 @@ packages:
       name: dart_code_metrics
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.1.0"
+    version: "4.19.2"
   dart_style:
     dependency: transitive
     description:
@@ -197,6 +197,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.2.4"
+  device_frame:
+    dependency: transitive
+    description:
+      name: device_frame
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   fake_async:
     dependency: transitive
     description:
@@ -253,7 +260,7 @@ packages:
       name: freezed
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.3.2"
+    version: "2.2.0"
   freezed_annotation:
     dependency: "direct main"
     description:
@@ -310,13 +317,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.15.1"
-  http:
-    dependency: transitive
-    description:
-      name: http
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.13.5"
   http_multi_server:
     dependency: transitive
     description:
@@ -534,13 +534,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.3"
-  pub_updater:
-    dependency: transitive
-    description:
-      name: pub_updater
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.2.3"
   pubspec_parse:
     dependency: transitive
     description:
@@ -686,6 +679,36 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.3.0"
+  widgetbook:
+    dependency: "direct dev"
+    description:
+      path: "packages/widgetbook"
+      ref: update-gorouter
+      resolved-ref: cc7a8e6d285a86defce58fc27a864af0ef2ee19e
+      url: "https://github.com/AdrielMarchena/widgetbook.git"
+    source: git
+    version: "2.4.1"
+  widgetbook_annotation:
+    dependency: "direct main"
+    description:
+      name: widgetbook_annotation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.0"
+  widgetbook_generator:
+    dependency: "direct dev"
+    description:
+      name: widgetbook_generator
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.4.1"
+  widgetbook_models:
+    dependency: transitive
+    description:
+      name: widgetbook_models
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.7"
   win32:
     dependency: transitive
     description:

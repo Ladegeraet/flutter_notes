@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:notes_app/features/settings/presentation/settings_page.dart';
+import 'package:widgetbook_annotation/widgetbook_annotation.dart';
+
+@WidgetbookUseCase(name: 'Default', type: NotesPage)
+Widget notesPageUseCase(BuildContext context) {
+  return const NotesPage(
+    title: 'WidgetBook',
+  );
+}
 
 class NotesPage extends StatefulWidget {
   static const routeName = 'NotesPage';
